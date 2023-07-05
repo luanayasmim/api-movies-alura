@@ -39,7 +39,7 @@ partial class FilmeContextModelSnapshot : ModelSnapshot
 
                 b.HasKey("Id");
 
-                b.ToTable("filmes");
+                b.ToTable("Filmes");
             });
 #pragma warning restore 612, 618
     }

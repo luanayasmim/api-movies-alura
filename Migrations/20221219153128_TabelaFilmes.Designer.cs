@@ -41,7 +41,7 @@ namespace FilmesApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("filmes");
+                    b.ToTable("Filmes");
                 });
 #pragma warning restore 612, 618
         }

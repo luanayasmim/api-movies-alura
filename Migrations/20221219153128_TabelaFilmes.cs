@@ -13,7 +13,7 @@ public partial class TabelaFilmes : Migration
             .Annotation("MySql:CharSet", "utf8mb4");
 
         migrationBuilder.CreateTable(
-            name: "filmes",
+            name: "Filmes",
             columns: table => new
             {
                 Id = table.Column<int>(type: "int", nullable: false)
@@ -26,7 +26,7 @@ public partial class TabelaFilmes : Migration
             },
             constraints: table =>
             {
-                table.PrimaryKey("PK_filmes", x => x.Id);
+                table.PrimaryKey("PK_Filmes", x => x.Id);
             })
             .Annotation("MySql:CharSet", "utf8mb4");
     }
@@ -34,6 +34,6 @@ public partial class TabelaFilmes : Migration
     protected override void Down(MigrationBuilder migrationBuilder)
     {
         migrationBuilder.DropTable(
-            name: "filmes");
+            name: "Filmes");
     }
 }
